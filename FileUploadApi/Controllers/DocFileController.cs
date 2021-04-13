@@ -178,15 +178,13 @@ namespace FileUploadApi.Controllers
                                                 data.Add(
                                                     new PatientData
                                                     {
-                                                        LastName = authorsList[0],
-                                                        FirstName = patList[0],
-                                                        Facility = facility,
-
-                                                        Address = patientAddress,
-                                                        DOB = dateDOB[1],
-                                                        PateintDr = patientName,
-
-                                                        PhoneNumber = phoneNumber
+                                                        LastName = authorsList[0].Trim(),
+                                                        FirstName = patList[0].Trim(),
+                                                        Facility = facility.Trim(),
+                                                        Address = patientAddress.Trim(),
+                                                        DOB = dateDOB[1].Trim(),
+                                                        PateintDr = patientName.Trim(),
+                                                        PhoneNumber = phoneNumber.Trim()
                                                     });
 
 
@@ -208,12 +206,12 @@ namespace FileUploadApi.Controllers
                                             data.Add(
                                                 new PatientData
                                                 {
-                                                    LastName = patList[0],
-                                                    FirstName = patList[1],
-                                                    Facility = extractData[11],
-                                                    MedicareNumber = mcare[1],
-                                                    DOB = dateDOB[1],
-                                                    PateintDr = patientDr[0]
+                                                    LastName = patList[0].Trim(),
+                                                    FirstName = patList[1].Trim(),
+                                                    Facility = extractData[11].Trim(),
+                                                    MedicareNumber = mcare[1].Trim(),
+                                                    DOB = dateDOB[1].Trim(),
+                                                    PateintDr = patientDr[0].Trim()
                                                 });
                                     }
                                     else
