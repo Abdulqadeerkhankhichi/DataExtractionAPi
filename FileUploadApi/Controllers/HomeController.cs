@@ -21,7 +21,7 @@ namespace FileUploadApi.Controllers
         [System.Web.Mvc.HttpPost]
         public JsonResult upload(HttpPostedFileBase file)
         {
-            bool result = false;
+            
             StringBuilder strbuild = new StringBuilder();
             try
             {
@@ -49,7 +49,7 @@ namespace FileUploadApi.Controllers
             }
             catch (Exception)
             {
-                result = false;
+               
             }
 
             return new JsonResult()
@@ -59,7 +59,7 @@ namespace FileUploadApi.Controllers
         }
         public JsonResult uploadtext(HttpPostedFileBase file)
         {
-            bool result = false;
+           
             StringBuilder strbuild = new StringBuilder();
             try
             {
@@ -87,7 +87,7 @@ namespace FileUploadApi.Controllers
             }
             catch (Exception)
             {
-                result = false;
+              
             }
 
             return new JsonResult()

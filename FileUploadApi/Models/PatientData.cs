@@ -12,7 +12,7 @@ namespace FileUploadApi.Models
         public string Facility { get; set; }
         public string Address { get; set; }
         public string DOB { get; set; }
-        public string PateintDr { get; set; }
+        public string PatientDr { get; set; }
         public string MedicareNumber { get; set; }
         public string PhoneNumber { get; set; }
         
